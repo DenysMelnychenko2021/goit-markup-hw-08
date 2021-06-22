@@ -1,0 +1,31 @@
+.work {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+.work__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.work__item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.work__wrapper-img {
+  position: relative;
+}
+.work__label-title {
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  font-size: 14px;
+  line-height: 1.44;
+  overflow: auto;
+  text-align: center;
+  width: 370px;
+  background-color: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  bottom: 0;
+  padding: 27px 15px;
+}

@@ -1,0 +1,15 @@
+.logo-link {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.3;
+  color: var(--akcent-text-color);
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+}
+.logo-link__part {
+  color: #000;
+}
+.logo-link__option {
+  color: #ffffff;
+}
