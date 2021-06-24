@@ -1,0 +1,16 @@
+.link.current {
+  color: var(--akcent-text-color);
+  &::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    margin-top: 28px;
+    display: block;
+    position: absolute;
+    background-color: var(--akcent-text-color);
+    border-radius: 2px;
+  }
+}
+.link.current-mobile {
+  color: var(--akcent-text-color);
+}
