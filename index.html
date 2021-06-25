@@ -305,13 +305,8 @@
                     "
                     media="(max-width: 767px)"
                   />
-                  <img
-                    class="team__img"
-                    src="./images/product-designer-mob.jpg"
-                    alt="Игорь Демьяненко"
-                  />
+                  <img class="team__img" src="#" alt="Игорь Демьяненко" />
                 </picture>
-
                 <h3 class="team__name-title">Игорь Демьяненко</h3>
                 <p class="team__post-paragraph" lang="en">Product Designer</p>
                 <ul class="social-links link list">
@@ -364,17 +359,59 @@
             </li>
             <li class="team__item">
               <div class="team__card">
-                <img
-                  class="team__img"
-                  src="./images/frontend-developer.jpg"
-                  alt="Ольга Репина"
-                  width="270"
-                  height="260"
-                />
+                <picture class="picture">
+                  <source
+                    srcset="
+                      ./images/frontend-developer.webp    1x,
+                      ./images/frontend-developer@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/frontend-developer.jpg    1x,
+                      ./images/frontend-developer@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/frontend-developer-tablet.webp    1x,
+                      ./images/frontend-developer-tablet@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/frontend-developer-tablet.jpg    1x,
+                      ./images/frontend-developer-tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/frontend-developer-mob.webp    1x,
+                      ./images/frontend-developer-mob@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/frontend-developer-mob.jpg    1x,
+                      ./images/frontend-developer-mob@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img class="team__img" src="#" alt="Ольга Репина" />
+                </picture>
+
                 <h3 class="team__name-title">Ольга Репина</h3>
                 <p class="team__post-paragraph" lang="en">Frontend Developer</p>
                 <ul class="social-links link list">
-                  <li>
+                  <li class="social-links__item">
                     <a
                       class="social-links__team-card"
                       href="https://www.instagram.com/"
@@ -385,7 +422,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="social-links__item">
                     <a
                       class="social-links__team-card"
                       href="https://twitter.com/?lang=uk"
@@ -396,7 +433,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="social-links__item">
                     <a
                       class="social-links__team-card"
                       href="https://www.facebook.com/"
@@ -407,7 +444,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="social-links__item">
                     <a
                       class="social-links__team-card"
                       href="https://www.linkedin.com/"
@@ -423,17 +460,40 @@
             </li>
             <li class="team__item">
               <div class="team__card">
-                <img
-                  class="team__img"
-                  src="./images/marketing.jpg"
-                  alt="Николай Тарасов"
-                  width="270"
-                  height="260"
-                />
+                <picture class="picture">
+                  <source
+                    srcset="./images/marketing.webp 1x, ./images/marketing@2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/marketing.jpg 1x, ./images/marketing@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/marketing-tablet.webp 1x, ./images/marketing-tablet@2x.webp 2x"
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/marketing-tablet.jpg 1x, ./images/marketing-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/marketing-mob.webp 1x, ./images/marketing-mob@2x.webp 2x"
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/marketing-mob.jpg 1x, ./images/marketing-mob@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <img class="team__img" src="#" alt="Николай Тарасов" />
+                </picture>
                 <h3 class="team__name-title">Николай Тарасов</h3>
                 <p class="team__post-paragraph" lang="en">Marketing</p>
                 <ul class="social-links link list">
-                  <li>
+                  <li class="social-links__item">
                     <a
                       class="social-links__team-card"
                       href="https://www.instagram.com/"
@@ -444,7 +504,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="social-links__item">
                     <a
                       class="social-links__team-card"
                       href="https://twitter.com/?lang=uk"
@@ -455,7 +515,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="social-links__item">
                     <a
                       class="social-links__team-card"
                       href="https://www.facebook.com/"
@@ -466,7 +526,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="social-links__item">
                     <a
                       class="social-links__team-card"
                       href="https://www.linkedin.com/"
@@ -482,17 +542,46 @@
             </li>
             <li class="team__item">
               <div class="team__card">
-                <img
-                  class="team__img"
-                  src="./images/ul-designer.jpg"
-                  alt="Михаил Ермаков"
-                  width="270"
-                  height="260"
-                />
+                <picture class="picture">
+                  <source
+                    srcset="./images/ul-designer.webp 1x, ./images/ul-designer@2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/ul-designer.jpg 1x, ./images/ul-designer@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/ul-designer-tablet.webp    1x,
+                      ./images/ul-designer-tablet@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/ul-designer-tablet.jpg    1x,
+                      ./images/ul-designer-tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/ul-designer-mob.webp 1x, ./images/ul-designer-mob@2x.webp 2x"
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/ul-designer-mob.jpg 1x, ./images/ul-designer-mob@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <img class="team__img" src="#" alt="Михаил Ермаков" />
+                </picture>
                 <h3 class="team__name-title">Михаил Ермаков</h3>
                 <p class="team__post-paragraph" lang="en">UI Designer</p>
                 <ul class="social-links link list">
-                  <li>
+                  <li class="social-links__item">
                     <a
                       class="social-links__team-card"
                       href="https://www.instagram.com/"
@@ -503,7 +592,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="social-links__item">
                     <a
                       class="social-links__team-card"
                       href="https://twitter.com/?lang=uk"
@@ -514,7 +603,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="social-links__item">
                     <a
                       class="social-links__team-card"
                       href="https://www.facebook.com/"
@@ -525,7 +614,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="social-links__item">
                     <a
                       class="social-links__team-card"
                       href="https://www.linkedin.com/"
@@ -543,60 +632,60 @@
         </div>
       </section>
       <!--=======================CLIENTS=========================-->
-      <!--<section class="clients">
+      <section class="section">
         <div class="container">
           <h2 class="headlines">Постоянные клиенты</h2>
           <ul class="clients__list list">
-            <li>
-              <a class="clients__link" href="" target="_blank">
-                <svg class="clients__icon" width="170" height="92">
+            <li class="clients__item">
+              <a class="clients__link" href="#" target="_blank">
+                <svg class="clients__icon">
                   <use href="./images/icons.svg#icon-client-one"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="clients__link" href="" target="_blank">
-                <svg class="clients__icon" width="170" height="92">
+            <li class="clients__item">
+              <a class="clients__link" href="#" target="_blank">
+                <svg class="clients__icon">
                   <use href="./images/icons.svg#icon-client-two"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="clients__link" href="" target="_blank">
-                <svg class="clients__icon" width="170" height="92">
+            <li class="clients__item">
+              <a class="clients__link" href="#" target="_blank">
+                <svg class="clients__icon">
                   <use href="./images/icons.svg#icon-client-three"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="clients__link" href="" target="_blank">
-                <svg class="clients__icon" width="170" height="92">
+            <li class="clients__item">
+              <a class="clients__link" href="#" target="_blank">
+                <svg class="clients__icon">
                   <use href="./images/icons.svg#icon-client-four"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="clients__link" href="" target="_blank">
-                <svg class="clients__icon" width="170" height="92">
+            <li class="clients__item">
+              <a class="clients__link" href="#" target="_blank">
+                <svg class="clients__icon">
                   <use href="./images/icons.svg#icon-client-five"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="clients__link" href="" target="_blank">
-                <svg class="clients__icon" width="170" height="92">
+            <li class="clients__item">
+              <a class="clients__link" href="#" target="_blank">
+                <svg class="clients__icon">
                   <use href="./images/icons.svg#icon-client-six"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-      </section>-->
+      </section>
     </main>
     <!--======================FOOTER======================-->
-    <!--<footer class="footer">
+    <footer class="footer">
       <div class="container">
-        <div class="footer__container list">
+        <div class="footer-container list">
           <div>
             <a class="logo-link link" href="./index.html" title="Логотип компании" lang="en"
               >Web<span class="logo-link__option link">Studio</span></a
@@ -701,7 +790,7 @@
           </div>
         </div>
       </div>
-    </footer>-->
+    </footer>
     <!--<div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__close-button" type="button" data-modal-close>

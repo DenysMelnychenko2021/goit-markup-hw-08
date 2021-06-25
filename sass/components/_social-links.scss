@@ -19,10 +19,13 @@
     }
   }
 }
-
 .social-links__list-footer {
   display: flex;
+  justify-content: center;
 }
+/*1200 .social-links__list-footer {
+  display: flex;  
+} */
 .social-links__item-footer {
   &:not(:last-child) {
     margin-right: 10px;
