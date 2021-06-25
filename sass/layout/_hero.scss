@@ -1,20 +1,71 @@
 .hero {
   text-align: center;
-  padding-bottom: 200px;
-  padding-top: 200px;
+  padding-bottom: 118px;
+  padding-top: 118px;
   background-color: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/background-header.jpg);
+    url(../images/background-header-mobile.jpg);
   width: 100%;
   margin: 0 auto;
   background-size: cover;
 }
+
+@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/background-header-mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/background-header-tablet.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/background-header-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-bottom: 200px;
+    padding-top: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/background-header.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (min-resolution: 192dpi) and (min-width: 1200px),
+  (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/background-header@2x.jpg);
+  }
+}
+
 .hero__title {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.38;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }

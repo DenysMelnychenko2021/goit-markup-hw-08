@@ -159,12 +159,12 @@
     </header>
     <main>
       <!--======================SECTION HERO======================-->
-      <!--<section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">эффективные решения<br />для вашего бизнеса</h1>
           <button class="button" type="button" data-modal-open>Заказать услугу</button>
         </div>
-      </section>-->
+      </section>
       <!--======================SECTION ADVANTAGES======================-->
       <section class="advantages">
         <div class="container">
@@ -218,7 +218,7 @@
         </div>
       </section>
       <!--======================SECTION WORK======================-->
-      <!--<section class="work">
+      <section class="work">
         <div class="container">
           <h2 class="headlines">Чем мы занимаемся</h2>
           <ul class="work__list list">
@@ -257,25 +257,65 @@
             </li>
           </ul>
         </div>
-      </section>-->
+      </section>
       <!--======================SECTION TEAM======================-->
-      <!--<section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="headlines">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
               <div class="team__card">
-                <img
-                  class="team__img"
-                  src="./images/product-designer.jpg"
-                  alt="Игорь Демьяненко"
-                  width="270"
-                  height="260"
-                />
+                <picture class="picture">
+                  <source
+                    srcset="./images/product-designer.webp 1x, ./images/product-designer@2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/product-designer.jpg 1x, ./images/product-designer@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/product-designer-tablet.webp    1x,
+                      ./images/product-designer-tablet@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/product-designer-tablet.jpg    1x,
+                      ./images/product-designer-tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/product-designer-mob.webp    1x,
+                      ./images/product-designer-mob@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/product-designer-mob.jpg    1x,
+                      ./images/product-designer-mob@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="team__img"
+                    src="./images/product-designer-mob.jpg"
+                    alt="Игорь Демьяненко"
+                  />
+                </picture>
+
                 <h3 class="team__name-title">Игорь Демьяненко</h3>
                 <p class="team__post-paragraph" lang="en">Product Designer</p>
                 <ul class="social-links link list">
-                  <li>
+                  <li class="social-links__item">
                     <a
                       class="social-links__team-card"
                       href="https://www.instagram.com/"
@@ -286,7 +326,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="social-links__item">
                     <a
                       class="social-links__team-card"
                       href="https://twitter.com/?lang=uk"
@@ -297,7 +337,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="social-links__item">
                     <a
                       class="social-links__team-card"
                       href="https://www.facebook.com/"
@@ -308,7 +348,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="social-links__item">
                     <a
                       class="social-links__team-card"
                       href="https://www.linkedin.com/"
@@ -501,7 +541,7 @@
             </li>
           </ul>
         </div>
-      </section>-->
+      </section>
       <!--=======================CLIENTS=========================-->
       <!--<section class="clients">
         <div class="container">

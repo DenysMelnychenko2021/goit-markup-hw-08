@@ -55,8 +55,15 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .backdrop {
@@ -135,9 +142,9 @@ img {
 }
 
 .headlines {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.18;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -432,9 +439,12 @@ img {
 
 .social-links {
   display: flex;
-  justify-content: space-between;
-  padding-left: 32px;
-  padding-right: 32px;
+  width: 206px;
+  margin: 0 auto;
+}
+
+.social-links__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-links__icon {
@@ -471,7 +481,7 @@ img {
 
 .advantages {
   padding-top: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
 
 .advantages__subtitle {
@@ -668,6 +678,7 @@ img {
     padding: 0;
     line-height: 0;
     cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .header__mobile-menu-btn:hover,
   .header__mobile-menu-btn :focus {
@@ -736,23 +747,62 @@ img {
 
 .hero {
   text-align: center;
-  padding-bottom: 200px;
-  padding-top: 200px;
+  padding-bottom: 118px;
+  padding-top: 118px;
   background-color: #c4c4c4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-header.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-header-mobile.jpg);
   width: 100%;
   margin: 0 auto;
   background-size: cover;
 }
 
+@media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-header-mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-header-tablet.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-header-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-bottom: 200px;
+    padding-top: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-header.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-header@2x.jpg);
+  }
+}
+
 .hero__title {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.38;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .buttons-filter {
@@ -840,19 +890,6 @@ img {
   background-color: #f5f4fa;
 }
 
-.team__list {
-  display: flex;
-  margin-top: -30px;
-  margin-left: -30px;
-  flex-wrap: wrap;
-}
-
-.team__item {
-  margin-top: 30px;
-  margin-left: 30px;
-  flex-basis: calc((100% - 120px) / 4);
-}
-
 .team__card {
   text-align: center;
   padding-bottom: 30px;
@@ -874,6 +911,32 @@ img {
   line-height: 1.2;
   margin-bottom: 16px;
   color: var(--additional-color);
+}
+
+@media screen and (max-width: 767px) {
+  .team__list {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    margin-top: -30px;
+    margin-left: -30px;
+    flex-wrap: wrap;
+  }
+  .team__item {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 120px) / 4);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
 }
 
 .work {
