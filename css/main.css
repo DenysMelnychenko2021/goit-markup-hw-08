@@ -282,7 +282,6 @@ img {
   .mobile-menu__social-list {
     display: flex;
     margin-top: 64px;
-    overflow: auto;
   }
   .mobile-menu__social-item:not(:first-child) {
     padding-left: 10px;
@@ -297,6 +296,15 @@ img {
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: var(--akcent-text-color);
+  }
+}
+
+@media screen and (max-width: 408px) {
+  .mobile-menu__contacts-link-tel {
+    font-size: 30px;
+  }
+  .mobile-menu__social-link {
+    font-size: 12px;
   }
 }
 
