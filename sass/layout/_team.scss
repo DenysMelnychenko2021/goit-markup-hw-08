@@ -23,9 +23,14 @@
   color: var(--additional-color);
 }
 @media screen and (max-width: 767px) {
-  .team__item {
-    &:not(:last-child) {
-      margin-bottom: 30px;
+  .team {
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    &__img {
+      width: 100%;
     }
   }
 }
