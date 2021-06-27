@@ -206,11 +206,9 @@ img {
 
 @media screen and (max-width: 767px) {
   .mobile-menu {
-    /* position: relative; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* height: 100vh; */
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
@@ -223,7 +221,6 @@ img {
     height: 100vh;
     background-color: var(--secondary-color);
     overflow: auto;
-    /* padding-top: 10px; */
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
