@@ -84,11 +84,16 @@
 
 .modal-form__checkbox-policy {
   margin: 0 auto;
-  font-size: 14px;
+  font-size: 11px;
   line-height: 1.8;
   color: var(--additional-color);
   margin-bottom: 30px;
   cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form__checkbox-policy {
+    font-size: 14px;
+  }
 }
 .modal-form__policy-link {
   color: var(--akcent-text-color);

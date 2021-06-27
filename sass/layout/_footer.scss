@@ -95,6 +95,9 @@
       display: flex;
       justify-content: space-between;
     }
+    &__wrapper {
+      margin: 0;
+    }
     &__join {
       margin-left: 70px;
       padding-top: 12px;

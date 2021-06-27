@@ -150,6 +150,13 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .headlines {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+
 .logo-link {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -199,6 +206,15 @@ img {
 
 @media screen and (max-width: 767px) {
   .mobile-menu {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 100vh; */
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     z-index: 1000;
     position: fixed;
     top: 0;
@@ -207,7 +223,7 @@ img {
     height: 100vh;
     background-color: var(--secondary-color);
     overflow: auto;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
@@ -217,17 +233,6 @@ img {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-  }
-  .mobile-menu__container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
-    padding-top: 48px;
-    padding-bottom: 48px;
-    padding-left: 40px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   }
   .mobile-menu__close-btn {
     position: absolute;
@@ -399,11 +404,17 @@ img {
 
 .modal-form__checkbox-policy {
   margin: 0 auto;
-  font-size: 14px;
+  font-size: 11px;
   line-height: 1.8;
   color: var(--additional-color);
   margin-bottom: 30px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__checkbox-policy {
+    font-size: 14px;
+  }
 }
 
 .modal-form__policy-link {
@@ -705,6 +716,9 @@ img {
   .footer__container {
     display: flex;
     justify-content: space-between;
+  }
+  .footer__wrapper {
+    margin: 0;
   }
   .footer__join {
     margin-left: 70px;
